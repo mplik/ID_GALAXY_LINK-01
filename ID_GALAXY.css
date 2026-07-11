@@ -4,14 +4,16 @@
   --bg1:#0f1724;
   --bg2:#0b1a2b;
   --accent:#6ee7b7;
-  --muted:#9aa4b2;
-  --card:#0f2130;
+  --text: #0b1220; /* default (light theme) */
+  --muted: #475569; /* subdued for light theme */
+  --tagline: #55697a;
+  --card:#ffffff;
 }
 *{box-sizing:border-box}
 body{
   margin:0;
   font-family: 'Inter', Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  color:#e6f0ff;
+  color:var(--text);
   background:linear-gradient(180deg,var(--bg1),var(--bg2));
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -38,7 +40,7 @@ body{
 .btn:focus-visible{outline:3px solid rgba(110,231,183,0.2);outline-offset:4px;border-radius:10px}
 
 /* ensure contrast for tagline */
-.tagline{color:#b9c9d9}
+.tagline{color:var(--tagline)}
 
 .container{max-width:1000px;margin:-56px auto 40px;padding:0 20px;display:grid;grid-template-columns:1fr;gap:20px}
 .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);backdrop-filter: blur(4px);border:1px solid rgba(255,255,255,0.02)}
@@ -71,4 +73,34 @@ body{
   .container{margin-top:-32px}
   .hero-media{flex-direction:column}
   .hero-photo,.hero-preview{max-width:90%}
+}
+
+/* Dark mode defaults */
+@media (prefers-color-scheme: dark) {
+  :root{
+    --bg1:#0f1724;
+    --bg2:#0b1a2b;
+    --accent:#6ee7b7;
+    --text:#E6F7FF;
+    --muted:#9FBFD6;
+    --tagline:#BFDCEA;
+    --card:#0f2130;
+  }
+}
+
+/* Light mode adjustments */
+@media (prefers-color-scheme: light) {
+  :root{
+    --bg1:#f6fbff;
+    --bg2:#eaf6ff;
+    --accent:#2b6cb0;
+    --text:#0b1220;
+    --muted:#475569;
+    --tagline:#55697a;
+    --card:#ffffff;
+  }
+  body{background:linear-gradient(180deg,var(--bg1),var(--bg2));}
+  .card{background:var(--card);color:var(--text)}
+  .hero h1{color:var(--text)}
+  .btn{color:#fff}
 }
