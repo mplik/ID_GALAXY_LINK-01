@@ -28,7 +28,25 @@
     <link rel="stylesheet" href="ID_GALAXY.css">
   </head>
   <body>
-    <header class="hero">
+    <header class="hero" id="top">
+      <nav class="site-nav" aria-label="Główna nawigacja">
+        <a class="brand" href="#top">ID GALAXY</a>
+        <details class="nav-menu">
+          <summary>Menu</summary>
+          <div class="nav-panel">
+            <div class="nav-links">
+              <a href="#about">O projekcie</a>
+              <a href="#docs">Dokumentacja projektu</a>
+              <a href="#contribution">Wkład</a>
+            </div>
+          </div>
+        </details>
+        <div class="nav-links nav-links-desktop">
+          <a href="#about">O projekcie</a>
+          <a href="#docs">Dokumentacja projektu</a>
+          <a href="#contribution">Wkład</a>
+        </div>
+      </nav>
       <div class="hero-inner">
         <h1>ID GALAXY</h1>
         <p class="tagline">Interaktywny identyfikator personalny oparty na Arduino Nano — futurystyczna wizytówka dla wydarzeń i targów technologicznych.</p>
@@ -51,6 +69,22 @@
         <p>ID_GALAXY_LINK to personalizowany identyfikator zbudowany wokół mikrokontrolera <strong>Arduino Nano (ATmega328P)</strong>. Projekt powstał z myślą o osobach, które cenią nowoczesność, estetykę i interakcję bardziej niż klasyczne rozwiązania.</p>
         <p>Zamiast tradycyjnej wizytówki urządzenie wykorzystuje wyświetlacz OLED z animacją gwiazd, przycisk funkcyjny oraz kompaktowy, industrialny design. Dzięki temu staje się Twoim głosem jeszcze przed pierwszym słowem i buduje efekt „wow” podczas targów, konferencji i spotkań technologicznych.</p>
         <p>Przezroczysta konstrukcja odsłania serce urządzenia, a płynne przejście między trybem oczekiwania i powitania podkreśla jego charakter. To małe, dopracowane narzędzie jutra, które możesz dopasować do własnych preferencji.</p>
+      </section>
+
+      <section id="docs" class="card info-card">
+        <div>
+          <h3>Dokumentacja projektu</h3>
+          <p>W tej sekcji znajdziesz uporządkowane informacje techniczne, opis założeń i szczegóły związane z budową projektu. Treść będzie rozwijana w trakcie prac, aby zachować spójny i aktualny obraz całego rozwiązania.</p>
+        </div>
+        <a class="btn ghost info-link" href="docs/PROJECT_DOCS.md">Otwórz dokumentację</a>
+      </section>
+
+      <section id="contribution" class="card info-card">
+        <div>
+          <h3>Wkład</h3>
+          <p>Ta sekcja jest przeznaczona na opis wkładu, zakresu prac i podsumowanie rozwoju projektu. Na tym etapie pozostaje jako eleganckie miejsce na treść, którą uzupełnimy później wraz z postępem prac.</p>
+        </div>
+        <div class="status-pill">Do uzupełnienia</div>
       </section>
 
       <section id="features" class="card grid">
