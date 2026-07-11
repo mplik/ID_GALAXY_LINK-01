@@ -1,0 +1,59 @@
+++ /workspaces/ID_GALAXY_LINK-01/ID_GALAXY.css
+/* ID_GALAXY — styl strony produktu */
+:root{
+  --bg1:#0f1724;
+  --bg2:#0b1a2b;
+  --accent:#6ee7b7;
+  --muted:#9aa4b2;
+  --card:#0f2130;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:#e6f0ff;
+  background:linear-gradient(180deg,var(--bg1),var(--bg2));
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.hero{
+  position:relative;
+  padding:64px 20px 88px;
+  text-align:center;
+  overflow:hidden;
+}
+.hero::after{
+  content:"";
+  position:absolute;inset:0;z-index:0;
+  background:radial-gradient(ellipse at 20% 20%, rgba(110,231,183,0.06), transparent 10%), radial-gradient(ellipse at 80% 80%, rgba(94,197,255,0.04), transparent 20%);
+}
+.hero-inner{position:relative;z-index:1;max-width:900px;margin:0 auto}
+.hero h1{font-size:3rem;margin:0 0 8px;letter-spacing:0.4px}
+.tagline{color:var(--muted);max-width:720px;margin:0 auto 18px}
+.hero-cta{display:inline-flex;gap:12px}
+.btn{display:inline-block;padding:10px 18px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#60a5fa);color:#042028;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(110,231,183,0.12)}
+
+.container{max-width:1000px;margin:-56px auto 40px;padding:0 20px;display:grid;grid-template-columns:1fr;gap:20px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);backdrop-filter: blur(4px)}
+.grid{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:center}
+.features-list{list-style:none;padding:0;margin:8px 0 0;color:var(--muted)}
+.features-list li{padding:8px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
+
+.mockup{display:flex;justify-content:center}
+.device{width:300px;border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#06324a,#052033);padding:18px;border:1px solid rgba(255,255,255,0.04)}
+.screen{height:160px;border-radius:8px;background:#020617;position:relative;display:flex;align-items:center;justify-content:center;color:#88f0c0;overflow:hidden}
+.screen .text{position:relative;z-index:2;font-weight:700;letter-spacing:1px}
+.stars-anim{position:absolute;inset:0;background-image:radial-gradient(#ffffff 1px, transparent 1px);background-size:40px 40px;opacity:0.06;animation:moveStars 20s linear infinite}
+.base{margin-top:12px;text-align:center;color:var(--muted);font-size:0.9rem}
+
+@keyframes moveStars{from{background-position:0 0}to{background-position:400px 200px}}
+
+.site-footer{text-align:center;padding:18px;color:var(--muted)}
+
+/* responsywność */
+@media (max-width:820px){
+  .grid{grid-template-columns:1fr}
+  .hero h1{font-size:2.2rem}
+  .container{margin-top:-32px}
+}
