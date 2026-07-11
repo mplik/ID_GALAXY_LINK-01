@@ -10,6 +10,10 @@ ID_GALAXY_LINK to interaktywny identyfikator personalny oparty na mikrokontroler
 - `assets/ID_GALAXY_preview.svg` — obraz projektu / podgląd.
 - `firmware/code.ino` — szablon kodu Arduino.
 
+## Pliki PDF
+- [ID_Galaxy_link..pdf](ID_Galaxy_link..pdf) — główna dokumentacja projektu.
+- [ID_Galaxy_Link- interpretacja_kodu..pdf](ID_Galaxy_Link-%20interpretacja_kodu..pdf) — interpretacja kodu i opis rozwiązania.
+
 ## Hardware (skrót)
 - Arduino Nano (ATmega328P)
 - OLED 0.96" I2C
