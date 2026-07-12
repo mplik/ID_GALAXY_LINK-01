@@ -21,25 +21,55 @@ Zamiast tradycyjnych wizytówek — kosmiczne wrażenie.
 Od przezroczystej konstrukcji po animacje OLED, każdy detal zaprojektowano tak,  
 by przyciągać uwagę i zapadać w pamięć.
 
-# ID_GALAXY_LINK-01
-ID_GALAXY_LINK: Interaktywny identyfikator personalny oparty na mikrokontrolerze Arduino Nano i wyświetlaczu OLED.
+## ✨ Features
 
-# ID_GALAXY_LINK
+- 🚀 Interaktywna wizytówka nowej generacji oparta o **ESP32**
+- 🖥️ Dynamiczna prezentacja treści na **wyświetlaczu OLED**
+- 🧊 Koncepcja transparentnej, futurystycznej formy urządzenia
+- 🧠 Połączenie hardware + software dla efektu „wow” na eventach i spotkaniach
+- 🛰️ Projekt rozwijany w duchu **Future Interface Lab (F.I.L.)**
 
-Innowacyjny, personalizowany identyfikator oparty na mikrokontrolerze Arduino Nano. Projekt stworzony z myślą o targach technologicznych jako interaktywna wizytówka osobista.
+## 🧩 Hardware Stack
 
-## Geneza powstania
-Pomysł zrodził się z potrzeby stworzenia unikalnego narzędzia do nawiązywania kontaktów. Zamiast standardowej wizytówki, postawiłem na hardware – projekt, który łączy elektronikę, programowanie i estetykę sci-fi.
+- **MCU:** ESP32  
+- **Display:** OLED  
+- **Power:** USB / zasilanie mobilne (w zależności od rewizji)  
+- **Form factor:** Compact wearable / pocket device (concept)
 
-## Cechy produktu
-* **Sercem projektu:** Arduino Nano (ATmega328P).
-* **Interfejs:** Wyświetlacz OLED 0.96" I2C z customową animacją gwiazd.
-* **Zasilanie:** Moduł ładowania TP4056 (USB-C) – pełna mobilność i łatwe ładowanie.
-* **Interakcja:** Przycisk funkcyjny (aktywujący powitanie i tryby wyświetlania).
-* **Design:** Kompaktowa płytka perforowana z industrialnym sznytem.
+## 💻 Software Stack
 
-## Status projektu
-[W trakcie rozwoju] – Trwają prace nad rozbudową funkcjonalności powitalnej przycisku.
+- **Firmware:** C/C++ (Arduino/ESP-IDF – zależnie od wersji)
+- **UI Logic:** animacje ekranowe + sekwencje prezentacyjne
+- **Communication (plan):** BLE / Wi-Fi (kolejne iteracje)
 
----
-*Projekt budowany z pasją do inżynierii i technologii.*
+## 🛣️ Roadmap
+
+### v0.1 — Concept & Prototype
+- [x] Zdefiniowanie wizji projektu i kierunku designu  
+- [x] Pierwsze uruchomienie platformy ESP32 + OLED  
+- [x] Przygotowanie narracji i identyfikacji projektu (README / branding)
+
+### v0.2 — Demo Interaction
+- [ ] Doprecyzowanie animacji i płynności UI  
+- [ ] Uspójnienie prezentowanych ekranów i sekwencji  
+- [ ] Testy stabilności działania na dłuższej sesji
+
+### v0.3 — Smart Connectivity
+- [ ] Integracja podstawowej komunikacji (BLE lub Wi-Fi)  
+- [ ] Mechanizm szybkiego udostępniania danych kontaktowych  
+- [ ] Wstępna konfiguracja profilu użytkownika
+
+### v1.0 — Public Release
+- [ ] Finalny design obudowy / formy  
+- [ ] Dokumentacja użytkownika i instrukcja uruchomienia  
+- [ ] Gotowy showcase projektu na eventy i prezentacje
+
+## 📸 Demo (WIP)
+
+> Wkrótce: zdjęcia prototypu, GIF-y animacji OLED i krótkie demo działania.
+
+## 🤝 Kontakt
+
+Jeśli chcesz współtworzyć projekt, testować prototyp lub nawiązać współpracę:
+- GitHub: [mplik](https://github.com/mplik)
+- Projekt: [ID_GALAXY_LINK-01](https://github.com/mplik/ID_GALAXY_LINK-01)
